@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="area.css">
+    <title>Fun with triangles</title>
+</head>
+<body>
+    <nav>
+        <h1>Fun with Triangles</h1>
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="./index.html">Quiz</a>
+                </li>
+                <li>
+                    <a href="./area.html" class="active">Area</a>
+                </li>
+                <li>
+                    <a href="./angles.html">Angles</a>
+                </li>
+                <li>
+                    <a href="./hypo.html">Hypotenuse</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h2>Area of Triangle</h2>
+        <form>
+            <div class="radio">
+                <label for="calArea1" class="label">
+                    <input type="radio" id="calArea1" name="areaCalOption" value="areaCalOption1">
+                    If you have base and height length</label>
+            </div>
+            <div class="radio">
+                <label for="calArea2" class="label">
+                    <input type="radio" id="calArea2" name="areaCalOption" value="areaCalOption2">
+                    If you have length of 3 sides</label>
+            </div>
+            <div class="radio">
+                <label for="calArea3" class="label">
+                    <input type="radio" id="calArea3" name="areaCalOption" value="areaCalOption3">
+                    If you have length of 2 sides and included angle</label>
+            </div>
+        </form>
+        <!-- area calculation for the 1st formula -->
+        <div class="areaBlock">
+            <div class="areaShowHere">1/2*base*height</div>
+
+            <form class="card">
+                <label for="baseInput"> Base (in cm):
+                    <input type="number" name="baseInput" id="baseInput" class="inputOption1" required>
+                </label>
+                <label for="heightInput"> Height (in cm): 
+                    <input type="number" name="heightInput" id="heightInput" class="inputOption1" required>
+                </label>
+                <button class="button" id="submitBtn">calculate</button>
+            </form>
+            <div class="output"></div>
+        </div>
+        <!-- area calculation for the 2nd formula -->
+        <div class="areaBlock">
+            <div class="areaShowHere"><span style="font-size: 1.8rem;">√</span>s(s-a)(s-b)(s-c)</div>
+
+            <form class="card">
+                <label for="sideA"> Side a:
+                    <input type="number" name="sideA" id="sideA" class="inputOption2" required>
+                </label>
+                <label for="sideB"> Side b: 
+                    <input type="number" name="sideB" id="sideB" class="inputOption2" required>
+                </label>
+                <label for="sideC"> Side c: 
+                    <input type="number" name="sideC" id="sideC" class="inputOption2" required>
+                </label>
+                <button class="button" id="submitBtn">calculate</button>
+            </form>
+            <div class="output"></div>
+        </div>
+        <!-- area calculation with 3rd formula -->
+        <div class="areaBlock">
+            <div class="areaShowHere">1/2*b*c*sin(A)</div>
+            <form class="card">
+                <label for="angle"> Angle(deg):
+                    <input type="number" name="angle" id="angle" class="inputOption3" required>
+                </label>
+                <label for="sideB"> Side b: 
+                    <input type="number" name="sideB" id="sideB" class="inputOption3" required>
+                </label>
+                <label for="sideC"> Side c: 
+                    <input type="number" name="sideC" id="sideC" class="inputOption3" required>
+                </label>
+                <button class="button" id="submitBtn">calculate</button>
+            </form>
+            <div class="outputs">
+                <h2 class="output"></h2>
+                <h2 class="output"></h2>
+                <h2 class="output"></h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="./area.js"></script>
+</body>
+</html>

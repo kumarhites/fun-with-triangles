@@ -1,0 +1,63 @@
+.container h2{
+    padding: 20px;
+}
+.areaBlock input{
+    background-color: rgba(24, 24, 24, 0.678);
+    outline: none;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    font-size: medium;
+    font-family: var(--font);
+}
+.areaBlock form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    width: 100%;
+    gap: 1rem;
+    justify-content: space-between;
+}
+.areaShowHere{
+    font-size: 2rem;
+    text-align: center;
+}
+.areaBlock{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+div .output{
+    text-align: center;
+    margin: 20px;
+    font-size: 20px;
+}
+.areaBlock input{
+    width: 60%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form > label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+}
+/* //smartphone landscape */
+@media screen and (min-width: 480px) and (max-width: 767px)  {
+    .formQuiz{
+        width: 80%;
+    }
+}
+
+/* //smartphone portrait */
+@media screen and (max-width: 479px) {
+    .formQuiz{
+        min-width: 90%;
+    }
+}

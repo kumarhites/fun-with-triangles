@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="angles.css">
+    <title>Fun with Triangles</title>
+</head>
+<body>
+    <nav>
+        <h1>Fun with Triangles</h1>
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="./index.html">Quiz</a>
+                </li>
+                <li>
+                    <a href="./area.html">Area</a>
+                </li>
+                <li>
+                    <a href="./angles.html" class="active">Angles</a>
+                </li>
+                <li>
+                    <a href="./hypo.html">Hypotenuse</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>is it a Triangle?</h2>
+        <div class="card">
+                <label for="angle"> Angle 1 (in degrees)</label>
+                <input class="inputBox inputAngle" type="number" min="1" max="180" required>
+
+                <label for="angle"> Angle 2 (in degrees)</label>
+                <input class="inputBox inputAngle" type="number" min="1" max="180" required>
+
+                <label for="angle"> Angle 3 (in degrees)</label>
+                <input class="inputBox inputAngle" type="number" min="1" max="180" required>
+
+                <button class="button" id="button">submit</button>
+            </div>
+            <h2 id="output"></h2>
+    </div>
+
+
+    <script src="./angles.js"></script>
+</body>
+</html>

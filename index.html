@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fun with Triangles</title>
+</head>
+<body>
+    <nav>
+        <h1>Fun with Triangles</h1>
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="./index.html" class="active">Quiz</a>
+                </li>
+                <li>
+                    <a href="./area.html">Area</a>
+                </li>
+                <li>
+                    <a href="./angles.html">Angles</a>
+                </li>
+                <li>
+                    <a href="./hypo.html">Hypotenuse</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="quiz container">
+        <h2 id="heading">Quiz</h2>
+        <p id="info">For each correct answer you will get <b>1 point</b> 📌</p>
+        <form class="formQuiz">
+
+            <div class="radio ow">
+                <label class="label question"> <b>1.</b> &nbsp; If a triangle has angles 90°, 60°, 30°. Is it a right angle triangle?</label>
+                
+                <label for="radio1" class="label"><input required type="radio" id="radio1" name="que1" value="option1">
+                yes</label>
+                
+                <label for="radio2" class="label"><input required type="radio" id="radio2" name="que1" value="option2">
+                no</label>
+            </div>
+            
+            <div class="radio ow">
+                <label class="label question"> <b>2.</b> &nbsp; A triangle has angles 60°, 60°, 60°. Is it an equilateral triangle?</label>
+                
+                <label for="radio3" class="label"><input required type="radio" id="radio3" name="que2" value="option1">
+                yes</label>
+                
+                <label for="radio3" class="label"><input required type="radio" id="radio3" name="que2" value="option2">
+                no</label>
+            </div>
+
+            <div class="radio ow">
+                <label class="label question"> <b>3.</b> &nbsp; If a triangle has angles 25°, 75°, 80°. Is it an acute triangle?</label>
+                
+                <label for="radio4" class="label"><input required type="radio" id="radio4" name="que3" value="option1">
+                yes</label>
+                
+                <label for="radio5" class="label"><input required type="radio" id="radio5" name="que3" value="option2">
+                no</label>
+            </div>
+
+            <div class="radio ow">
+                <label class="label question"><b>4.</b> &nbsp; If a triangle has 2 angles of 75°. What is the measure of third angle in degree?</label>
+                
+                <label for="radio6" class="label"><input required type="radio" id="radio6" name="que4" value="option1">
+                25</label>
+                
+                <label for="radio7" class="label"><input required type="radio" id="radio7" name="que4" value="option2">
+                30</label>
+                
+                <label for="radio8" class="label"><input required type="radio" id="radio8" name="que4" value="option3">
+                15</label>
+            </div>
+            
+            <div class="radio ow">
+                <label class="label question"><b>5.</b> &nbsp; The perimeter of an equilateral triangle is 15cm. What is the length of one side?</label>
+                
+                <label for="radio9" class="label"><input required type="radio" id="radio9" name="que5" value="option1">
+                15cm</label>
+                
+                <label for="radio10" class="label"><input required type="radio" id="radio10" name="que5" value="option2">
+                45cm</label>
+                
+                <label for="radio11" class="label"><input required type="radio" id="radio11" name="que5" value="option3">
+                5cm</label>
+            </div>
+
+            <button class="button" id="submitQuiz">Submit</button>
+        </form>
+        <div class="outputHere">
+            <h2 class="scoreHere"></h2>
+            <a class="tryAgain" href="./index.html">Try again?</a>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
