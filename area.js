@@ -28,13 +28,18 @@ function showOrHideBlock(blockDivs, showDivIndex, hideDivIndex1, hideDivIndex2){
     blockDivs[hideDivIndex2].style.display = "none";
 }
 
-
 document.forms[1].addEventListener('submit', (e)=>{
     e.preventDefault();
     const b = Number(inputOption1[0].value);
     const h = Number(inputOption1[1].value);
-    const area1 = (b*h)/2;
-    output[0].innerText = "Area = "+ parseFloat(area1).toFixed(2) +" cm²";
+    if(b <= 0 || h <= 0){
+        output[0].innerText = "Please enter valid inputs";
+    }
+    else{
+        const area1 = (b*h)/2;
+        output[0].innerText = "Area = "+ parseFloat(area1).toFixed(2) +" cm²";
+    }
+
 }, false);
 document.forms[2].addEventListener('submit', (e)=>{
     e.preventDefault();
@@ -42,6 +47,9 @@ document.forms[2].addEventListener('submit', (e)=>{
     const b = Number(inputOption2[1].value);
     const c = Number(inputOption2[2].value);
     let area2 = 0;
+    if(a <= 0 || b <= 0 || c <= 0){
+        output[1].innerText = "Sides cannot be negative";
+    }
     if((a+b)>c && (b+c)>a && (a+c)>b){
         const s=(a+b+c)/2;
         const area2 = Math.sqrt(s*(s-a)*(s-b)*(s-c));
@@ -56,6 +64,12 @@ document.forms[3].addEventListener('submit', (e)=>{
     const b = Number(inputOption3[0].value)
     const c = Number(inputOption3[1].value)
     const A = Number(inputOption3[2].value)
-    const area3 = (b*c*Math.sin(A*Math.PI/180))/2;
-    output[2].innerText = "Area = "+ parseFloat(area3).toFixed(2) +" cm²";
+    if(b <= 0 || c <= 0 || A <= 0){
+        output[2].innerText = "Please enter valid inputs";
+    }
+    else{
+        const area3 = (b*c*Math.sin(A*Math.PI/180))/2;
+        output[2].innerText = "Area = "+ parseFloat(area3).toFixed(2) +" cm²";
+    }
+    
 }, false);
