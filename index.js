@@ -14,11 +14,7 @@ quizForm.addEventListener('submit', (e) => {
     for(let entry of data){
         console.log(entry[0],":",entry[1]);
        if(entry[1] == correctAnswers[index]){
-        // queDivs[index].style.backgroundColor = "lightgreen";
         score++;
-       }
-       else{
-        // queDivs[index].style.backgroundColor = "pink";
        }
         index++;
     }

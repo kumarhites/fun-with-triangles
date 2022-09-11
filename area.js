@@ -55,9 +55,6 @@ document.forms[2].addEventListener('submit', (e)=>{
         const area2 = Math.sqrt(s*(s-a)*(s-b)*(s-c));
         output[1].innerText = "Area = "+ parseFloat(area2).toFixed(2)+" cm²";
         }
-        else{
-            // errorDiv.style.display = "block";
-        }  
 }, false );
 document.forms[3].addEventListener('submit', (e)=>{
     e.preventDefault();
@@ -69,6 +66,8 @@ document.forms[3].addEventListener('submit', (e)=>{
     }
     else{
         const area3 = (b*c*Math.sin(A*Math.PI/180))/2;
+        output[0].display = "none"
+        output[1].display = "none"
         output[2].innerText = "Area = "+ parseFloat(area3).toFixed(2) +" cm²";
     }
     
